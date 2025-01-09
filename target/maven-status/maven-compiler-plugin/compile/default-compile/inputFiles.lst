@@ -1,0 +1,9 @@
+/Users/barryhykesjr/Documents/Apps/springbootrelational/src/main/java/com/testproductapi/springbootrelational/SpringbootrelationalApplication.java
+/Users/barryhykesjr/Documents/Apps/springbootrelational/src/main/java/com/testproductapi/springbootrelational/SwaggerConfig.java
+/Users/barryhykesjr/Documents/Apps/springbootrelational/src/main/java/com/testproductapi/springbootrelational/WebSecurityConfigurerAdapter.java
+/Users/barryhykesjr/Documents/Apps/springbootrelational/src/main/java/com/testproductapi/springbootrelational/controller/ProductController.java
+/Users/barryhykesjr/Documents/Apps/springbootrelational/src/main/java/com/testproductapi/springbootrelational/dto/ProductDTO.java
+/Users/barryhykesjr/Documents/Apps/springbootrelational/src/main/java/com/testproductapi/springbootrelational/entity/Product.java
+/Users/barryhykesjr/Documents/Apps/springbootrelational/src/main/java/com/testproductapi/springbootrelational/exceptionHandlers/RestExceptionHandler.java
+/Users/barryhykesjr/Documents/Apps/springbootrelational/src/main/java/com/testproductapi/springbootrelational/repository/ProductRepository.java
+/Users/barryhykesjr/Documents/Apps/springbootrelational/src/main/java/com/testproductapi/springbootrelational/service/ProductService.java
