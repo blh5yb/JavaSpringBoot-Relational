@@ -9,6 +9,7 @@ services:
       - "8080:8080"
     volumes:
       - ./src:/app
+      
     environment:
       - SPRING_DATASOURCE_URL=jdbc:mysql://${DBNAME}:3306/springbootsql?createDatabaseIfNotExist=true
       - SPRING_DATASOURCE_USERNAME=${USERNAME}
