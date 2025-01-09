@@ -7,6 +7,6 @@ This is a demo spring api with some unit tests and swagger api configured
 
 ## To Do:
  - Add mailer endpoint
- - Authentication
+ - API Authentication and private endpoints
  - Complete Unit Tests
 
