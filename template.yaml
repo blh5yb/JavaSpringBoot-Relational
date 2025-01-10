@@ -1,0 +1,27 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: 'Java Spring Boot application on AWS Lambda'
+
+Resources:
+  SpringBootLambdaFunction:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Handler: com.testproductapi.springbootrelational.StreamLambdaHandler::StreamLambdaHandler
+      Runtime: java17
+      CodeUri: .
+      MemorySize: 512
+      Timeout: 30
+      PackageType: Image
+      ImageUri: 528757825990.dkr.ecr.us-east-2.amazonaws.com/spring_lambda:0.0.2
+      Policies:
+        - AWSLambdaBasicExecutionRole
+      Events:
+        Api:
+          Type: Api 
+          Properties:
+            Path: /
+            Method: any
+            Path: /products
+            Method: any
+            Path: /sendMail
+            Method: post
