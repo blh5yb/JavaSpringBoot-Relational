@@ -1,7 +1,7 @@
 # Demo Spring API
 This is a demo spring api with some unit tests and swagger api configured
 
-* [Sample lambda function deployed to aws api gateway](https://w2p5wlkwe2.execute-api.us-east-2.amazonaws.com/dev/greeting/Name)
+* [Sample greeting endpoint lambda function deployed to aws api gateway](https://w2p5wlkwe2.execute-api.us-east-2.amazonaws.com/dev/greeting/Name)
 
 ### Cmds
 `
