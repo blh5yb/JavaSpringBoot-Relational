@@ -1,7 +1,6 @@
 package com.testproductapi.springbootrelational.controller;
 // Importing required classes
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -18,7 +17,6 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 
 // Annotation
 @RestController
-@ConditionalOnProperty( prefix = "emailconnection", value = "enabled", havingValue = "true", matchIfMissing = false)
 // Class
 public class EmailController {
 

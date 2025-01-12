@@ -24,8 +24,8 @@ public class StreamLambdaHandler implements RequestStreamHandler {
         } catch (ContainerInitializationException e) {
             // if we fail here. We re-throw the exception to force another cold start
             e.printStackTrace();
-            throw new ResponseStatusException(HttpStatus.TOO_MANY_REQUESTS, "Could not initialize Spring Boot application: " + e.getMessage());
-            //throw new RuntimeException("Could not initialize Spring Boot application", e);
+            //throw new ResponseStatusException(HttpStatus.TOO_MANY_REQUESTS, "Could not initialize Spring Boot application: " + e.getMessage());
+            throw new RuntimeException("Could not initialize Spring Boot application", e);
         }
     }
 
