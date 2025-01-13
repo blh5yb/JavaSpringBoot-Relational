@@ -13,6 +13,6 @@ COPY target/dependency/* ${LAMBDA_TASK_ROOT}/lib/
 
 RUN chmod -R 755 /var/lang/bin
 
-# entrypoint for local testing
-#ENTRYPOINT [ "java", "-jar", "spring-docker.jar" ]
+# uncomment entrypoint for local testing
+# ENTRYPOINT [ "java", "-jar", "spring-docker.jar" ]
 CMD ["com.testproductapi.springbootrelational.StreamLambdaHandler::handleRequest"]
