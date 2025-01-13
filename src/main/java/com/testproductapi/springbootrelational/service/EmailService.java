@@ -1,7 +1,6 @@
 package com.testproductapi.springbootrelational.service;
 
 import com.testproductapi.springbootrelational.entity.Email;
-import com.testproductapi.springbootrelational.repository.EmailRepository;
 
 import java.io.File;
 import jakarta.mail.MessagingException;
@@ -20,7 +19,7 @@ import org.springframework.web.server.ResponseStatusException;
 // Importing required classes
 @Service
 @ConditionalOnProperty( prefix = "emailconnection", value = "enabled", havingValue = "true", matchIfMissing = false)
-public class EmailService implements EmailRepository {
+public class EmailService {
 
     @Autowired 
     private JavaMailSender javaMailSender;
@@ -33,8 +32,8 @@ public class EmailService implements EmailRepository {
     // To send a simple email
     public String sendSimpleMail(Email details) {
         // Try block to check for exceptions
+        System.out.println(details);
         try {
-
             // Creating a simple mail message
             SimpleMailMessage mailMessage
                 = new SimpleMailMessage();

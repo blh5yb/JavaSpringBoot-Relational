@@ -42,7 +42,7 @@ public class productControllerTests {
         String productDTOJson = "{\"name\": \"test\", \"description\": \"description\", \"price\": 5}\"}";
         when(productService.createProduct(any())).thenReturn(productDTO);
 
-        mockMvc.perform(MockMvcRequestBuilders.post("/api/products")
+        mockMvc.perform(MockMvcRequestBuilders.post("/products")
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(productDTOJson)
         )

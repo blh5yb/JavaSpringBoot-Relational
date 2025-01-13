@@ -1,6 +1,7 @@
 package com.testproductapi.springbootrelational.controller;
 // Importing required classes
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -35,13 +36,12 @@ public class EmailController {
         content = @Content)
     })
     @Tag(name="2. Email")
-    public String
-    sendMail(@RequestBody Email details)
+    public ResponseEntity<String> sendMail(@RequestBody Email details)
     {
         String status
             = emailService.sendSimpleMail(details);
 
-        return status;
+        return ResponseEntity.ok(status);
     }
 
     // Sending email with attachment

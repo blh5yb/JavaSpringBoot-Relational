@@ -9,15 +9,15 @@ import jakarta.persistence.Id;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
-//import lombok.Data;
+import lombok.Data;
 //import lombok.NoArgsConstructor;
 
 @Entity
 // Lombok annotation to generate getters, setters, equals, hashCode, and toString methods
-//@Data
-//// Lombok annotation to generate a no-args constructor
+@Data
+// Lombok annotation to generate a no-args constructor
 //@NoArgsConstructor
-//// Lombok annotation to generate an all-args constructor
+// Lombok annotation to generate an all-args constructor
 @AllArgsConstructor
 // Lombok annotation to generate a builder pattern for creating instances
 @Builder

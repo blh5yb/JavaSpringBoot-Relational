@@ -14,6 +14,7 @@ import com.testproductapi.springbootrelational.repository.ProductRepository;
 
 import jakarta.transaction.Transactional;
 
+//@SpringBootTest(properties = "spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration")
 @DataJpaTest
 public class productRepositoryTests {
     @Autowired
@@ -25,7 +26,7 @@ public class productRepositoryTests {
     public void testCreateProduct(){
         String name = "product1";
         String description = "desc1";
-        int price = 2;
+        double price = 2.0;
 
         Product product = Product.builder()
             .name(name).description(description).price(price)
