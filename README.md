@@ -5,7 +5,7 @@ This is a demo spring api with some unit tests and swagger api configured
 
 ## Cmds
 `
-    mvn -Daws.account=${AWS_ACCOUNT_ID} -Daws.region=${AWS_REGION} clean compile install -Pdocker -Dmaven.test.skip=true dependency:copy-dependencies
+    mvn -Daws.account=${AWS_ACCOUNT_ID} -Daws.region=${AWS_REGION} clean compile install -Pdocker -Dmaven.test.skip=true dependency:copy-dependencies\
     docker-compose build app
 `
 
