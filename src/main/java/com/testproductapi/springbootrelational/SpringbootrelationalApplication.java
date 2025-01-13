@@ -12,6 +12,7 @@ import org.springframework.scheduling.annotation.EnableAsync;
 @SpringBootApplication
 @EnableAsync
 //@EnableSwagger2
+//@EnableWebMvc
 public class SpringbootrelationalApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
