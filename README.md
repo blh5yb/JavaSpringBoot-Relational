@@ -28,7 +28,7 @@ This is a demo spring api with some unit tests and swagger api configured
 ### Swagger: http://localhost:8080/swagger-ui/index.html
 
 ## Swagger UI Docs
-http://localhost:3000/api-docs
+http://localhost:8080/swagger-ui/index.html
 
 ## PRODUCT ENDPOINTS
 ### GET /products
