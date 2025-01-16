@@ -26,7 +26,10 @@ This is a demo spring api with some unit tests and swagger api configured
 ### test db: http://localhost:8080/h2-console # brew install h2 && brew services start h2
 ### Swagger: http://localhost:8080/swagger-ui/index.html
 
-## Endpoints
+## Swagger UI Docs
+http://localhost:3000/api-docs
+
+## PRODUCT ENDPOINTS
 ### GET /products
 ### GET /products/{id}
 ### ### PUT /products/ 
@@ -34,6 +37,8 @@ This is a demo spring api with some unit tests and swagger api configured
 ### Patch /products/{id}
  - req body: {"name": "name", "price": 10, "description": "test description"}
 ### DELETE /products/{id}
+
+## EMAIL ENDPOINTS
 ### GET /sendMail
  - req body: {"recipient": "recipient@gmail.com", "msgBody": "email msg, "subject: "email subject"}
 
