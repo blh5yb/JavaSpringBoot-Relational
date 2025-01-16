@@ -6,6 +6,7 @@ This is a demo spring api with some unit tests and swagger api configured
 ## Features
  - Mongo DB Schema
  - Unit Tests
+ - Rate Limits (20 req per min)
  - Dockerized (with docker-compose)
  - AWS Lambda docker configuration
  - AWS Lambda deployed to API Gateway 
