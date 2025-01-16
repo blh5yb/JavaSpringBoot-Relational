@@ -3,14 +3,18 @@ This is a demo spring api with some unit tests and swagger api configured
 
 * [Sample dockerized greeting endpoint lambda function deployed to aws api gateway](https://w2p5wlkwe2.execute-api.us-east-2.amazonaws.com/dev/greeting/Name)
 
+## Features
+ - Mongo DB Schema
+ - Unit Tests
+ - Dockerized (with docker-compose)
+ - AWS Lambda docker configuration
+ - AWS Lambda deployed to API Gateway 
+
 ## Programming Languages, Frameworks and Platforms
  - Java
  - PostgreSQL
  - Spring Boot
  - Docker
- - AWS ECR
- - AWS Lambda
- - AWS API Gateway
 
 ## Cmds
 ```
