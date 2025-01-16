@@ -3,6 +3,15 @@ This is a demo spring api with some unit tests and swagger api configured
 
 * [Sample dockerized greeting endpoint lambda function deployed to aws api gateway](https://w2p5wlkwe2.execute-api.us-east-2.amazonaws.com/dev/greeting/Name)
 
+## Programming Languages, Frameworks and Platforms
+ - Java
+ - PostgreSQL
+ - Spring Boot
+ - Docker
+ - AWS ECR
+ - AWS Lambda
+ - AWS API Gateway
+
 ## Cmds
 ```
     mvn -Daws.account=${AWS_ACCOUNT_ID} -Daws.region=${AWS_REGION} clean compile install -Pdocker -Dmaven.test.skip=true dependency:copy-dependencies  
@@ -28,7 +37,8 @@ This is a demo spring api with some unit tests and swagger api configured
 20 per min for dev
 
 ## To Do:
- - API Authentication and private endpoints
+ - API Authentication + Middleware (aspect/ interceptor) and private endpoints
+ - Parameter validation aspect
  - Complete Unit Tests
  - email attachment
 
