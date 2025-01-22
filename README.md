@@ -33,7 +33,7 @@ http://localhost:8080/swagger-ui/index.html
 ## PRODUCT ENDPOINTS
 ### GET /products
 ### GET /products/{id}
-### ### PUT /products/ 
+### ### PUT /products/{id}
  - req body: {"name": "name", "price": 10, "description": "test description"}
 ### Patch /products/{id}
  - req body: {"name": "name", "price": 10, "description": "test description"}
