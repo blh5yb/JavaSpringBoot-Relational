@@ -33,7 +33,7 @@ http://localhost:8080/swagger-ui/index.html
 ## PRODUCT ENDPOINTS
 ### GET /products
 ### GET /products/{id}
-### ### PUT /products/ 
+### PUT /products/{id}
  - req body: {"name": "name", "price": 10, "description": "test description"}
 ### Patch /products/{id}
  - req body: {"name": "name", "price": 10, "description": "test description"}
@@ -46,9 +46,14 @@ http://localhost:8080/swagger-ui/index.html
 ### Rate Limit
 20 per min for dev
 
-## To Do:
- - API Authentication + Middleware (aspect/ interceptor) and private endpoints
+## In Progress
  - Parameter validation aspect
  - Complete Unit Tests
+ - App Security
+
+
+## To Do:
+ - API Authentication + Middleware (aspect/ interceptor) and private endpoints
  - email attachment
+ - Annotate code
 
